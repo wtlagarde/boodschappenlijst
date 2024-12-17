@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  background: #242526;
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.nav-link-inactive {
+  font-weight: 500;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 9px 15px;
+  border-radius: 10px;
+}
+
+.nav-link-active {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 9px 15px;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background: #3A3B3C;
+}
+
+header {
+  position: fixed;
+  z-index: 9;
+  width: 600px;
+  padding-top: 70px;
+  background-color: white;
+}
+
+h1 {
+  padding: 15px;
+}
+
+.table-container {
+  overflow-y: auto;
+  margin-left: 15px;
+  padding-top: 130px;
+}
+
+table {
+  border-collapse: collapse;
+  line-height: 2;
+  }
+
+th {
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.fixedHeader {
+  position: fixed;
+  z-index: 99;
+  width: 600px;
+}
+
+tbody {
+  position: absolute;
+  padding-top: 30px;
+  width: 600px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+  background-color: #cfcfcf;
+}
+
+.input {
+  position: absolute;
+  left: 80px;
+}
+
+.product {
+  width: 275px;
+}
+
+.price {
+  width: 75px;
+  text-align: right;
+}
+
+.amount {
+  width: 75px;  
+  text-align: center;
+}
+
+.subtotal {
+  width: 75px;
+  text-align: right;
+}
+
+p {
+  position: absolute;
+  top: 100px;
+  left: 15px;
+}
+
+#submit {
+  margin: 10px 80px;
+  padding: 5px;
+}
+
+ul {
+  line-height: 1.5;
+}
+
+.newEntry {
+  z-index: 10;
+  padding: 15px;
+  position: absolute;
+  padding-top: 140px;
+}
+
+#totalCost {
+  font-weight: bold;
+  text-align: right;
+  }
+
+.product-error {
+  padding-top: 45px;
+  padding-left: 250px;
+  color: red;
+  font-size: 12px;
+}
+
+.amount-error {
+  padding-top: 67px;
+  padding-left: 250px;
+  color: red;
+  font-size: 12px;
+}
+
+.price-error {
+  padding-top: 90px;
+  padding-left: 250px;
+  color: red;
+  font-size: 12px;
+}
+
+.product-added {
+  padding-left: 15px;
+  padding-top: 175px;
+  font-size: 16px;
+}
+
+.remove {
+  z-index: 999;
+  width: 100px;
+  text-align: center;
+}

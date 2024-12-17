@@ -1,0 +1,2 @@
+Check and streamline code
+add some more groceries to the db
