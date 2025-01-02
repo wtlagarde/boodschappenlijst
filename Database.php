@@ -5,7 +5,7 @@ class Database
     public $connection;
     public $statement;
     
-    public function __construct($config, $username = 'root', $password = '') //@ password is blank at desk 501 and 202, 'root' at the other pc
+    public function __construct($config, $username = 'root', $password = 'root') //@ password is blank at desk 501 and 202, 'root' at the other pc
     {
         $dsn = 'mysql:' . http_build_query($config, '', ';');
 

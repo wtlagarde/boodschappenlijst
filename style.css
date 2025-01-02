@@ -1,3 +1,4 @@
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: sans-serif;
 }
 
+/* Navigation */
 nav {
   position: fixed;
   z-index: 999;
@@ -26,10 +28,10 @@ nav {
 }
 
 .nav-link-active {
+  font-weight: 800;
   color: #f2f2f2;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 800;
   padding: 9px 15px;
   border-radius: 10px;
 }
@@ -38,134 +40,119 @@ nav a:hover {
   background: #3A3B3C;
 }
 
+/* Header */
 header {
   position: fixed;
-  z-index: 9;
-  width: 600px;
-  padding-top: 70px;
+  z-index: 998;
+  width: 100%;
+  padding-top: 85px;
   background-color: white;
+  padding-left: 15px;
+  padding-bottom: 30px;
 }
 
-h1 {
-  padding: 15px;
-}
-
-.table-container {
-  overflow-y: auto;
-  margin-left: 15px;
-  padding-top: 130px;
-}
-
+/* Grocery Table */
 table {
   border-collapse: collapse;
-  line-height: 2;
-  }
-
-th {
-  text-align: left;
-  background-color: #ffffff;
 }
 
-.fixedHeader {
+#table-container {
+  overflow-y: auto;
+  padding-top: 150px;
+  line-height: 1.3;
+}
+
+#table-container td{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#fixedHeader {
   position: fixed;
-  z-index: 99;
-  width: 600px;
+  z-index: 997;
+  line-height: 2;
+  background-color: #ffffff;
+  width: 100%;
 }
 
-tbody {
+#groceries {
   position: absolute;
   padding-top: 30px;
-  width: 600px;
 }
 
-tr:nth-child(even) {
+#groceries tr:nth-child(even) {
   background-color: #ffffff;
 }
 
-tr:nth-child(odd) {
+#groceries tr:nth-child(odd) {
   background-color: #cfcfcf;
 }
 
-.input {
-  position: absolute;
-  left: 80px;
-}
-
 .product {
-  width: 275px;
+  width: 300px;
+  text-align: left;
+  padding-left: 15px;
 }
 
 .price {
-  width: 75px;
+  width: 65px;
   text-align: right;
 }
 
 .amount {
-  width: 75px;  
+  width: 100px;  
   text-align: center;
 }
 
 .subtotal {
-  width: 75px;
+  width: 65px;
   text-align: right;
 }
 
-p {
-  position: absolute;
-  top: 100px;
-  left: 15px;
-}
-
-#submit {
-  margin: 10px 80px;
-  padding: 5px;
-}
-
-ul {
-  line-height: 1.5;
-}
-
-.newEntry {
-  z-index: 10;
-  padding: 15px;
-  position: absolute;
-  padding-top: 140px;
+.remove {
+  width: 80px;
+  text-align: center;
 }
 
 #totalCost {
   font-weight: bold;
   text-align: right;
-  }
-
-.product-error {
-  padding-top: 45px;
-  padding-left: 250px;
-  color: red;
-  font-size: 12px;
 }
 
-.amount-error {
-  padding-top: 67px;
-  padding-left: 250px;
-  color: red;
-  font-size: 12px;
-}
-
-.price-error {
-  padding-top: 90px;
-  padding-left: 250px;
-  color: red;
-  font-size: 12px;
-}
-
-.product-added {
+/*New Entry Form*/
+#newEntry {
+  padding-top: 155px;
   padding-left: 15px;
-  padding-top: 175px;
-  font-size: 16px;
+  line-height: 1.5;
 }
 
-.remove {
-  z-index: 999;
-  width: 100px;
-  text-align: center;
+.inputBoxes {
+  position: absolute;
+  left: 80px;
+  z-index: 996;
+}
+
+#submitButton {
+  margin: 10px 80px;
+  padding: 5px;
+}
+
+#product-added {
+  padding-left: 15px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+#errors {
+  color: red;
+  padding-top: 150px;
+  padding-left: 255px;
+  float: right;
+  position: fixed;
+  line-height: 2.1;
+  font-size: 12px;
+}
+
+.error-messages {
+  height: 15px;
 }

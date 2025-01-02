@@ -18,3 +18,7 @@ function authorize($condition, $status = Response::FORBIDDEN) {
     }
 };
 
+function addTotals($carry, $item)
+{
+    return $carry += $item["price"] * $item["amount"];
+};
